@@ -1,2 +1,0 @@
-# Portfolio
-R. Alan Williams
