@@ -21,3 +21,7 @@ overflow-x: hidden;
 h2 {
     text-align: center;
 }
+
+.mb-4 {
+    padding: 20px;
+}
