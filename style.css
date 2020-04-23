@@ -49,3 +49,13 @@ footer {
 .d-lg-none:focus {
     outline: none;
 }
+
+h2 {
+    display: inline;
+}
+
+#gitHubLogo {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 40px;
+}
