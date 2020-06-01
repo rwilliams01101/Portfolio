@@ -1,8 +1,3 @@
-<?php
-if($_POST["message"]) {
-    mail("rwilliams01101@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
-}
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -62,25 +57,29 @@ if($_POST["message"]) {
    <!-- End of jumbotron text -->
 
    <!-- Beginning of contact form -->
-   <section class="mb-4">
+   <section class="mb-4 body">
   
     <h3 class="h1-responsive font-weight-bold text-center my-4">Do you have any questions?</h3>
     <p class="text-center w-responsive mx-auto mb-5">Tell me what you have in mind and I'll tell you how we can accomplish it.
         </p>
   
     <div class="row">
-        <div class="col-md-9 mb-md-0 mb-5">
+        <div class="col-md-9 mb-md-0 mb-5">    
+            <form method="post" action="index.php">
         
-        <form method="post" action="contact.php">
-    <textarea name="message"></textarea>
-    <input type="submit">
-</form>
-               
-                
-
-
-
-            <!-- <form id="contact-form" name="contact-form" method="post" action="contact.php">
+                <label class="contactForm">Name</label>
+                <input name="name" placeholder="Type Here">
+                        
+                <label class="contactForm">Email</label>
+                <input name="email" type="email" placeholder="Type Here">
+                        
+                <label class="contactForm">Message</label>
+                <textarea name="message" placeholder="Type Here"></textarea>
+                        
+                <input id="submit" name="submit" type="submit" value="Submit">
+                    
+            </form>     
+            <!-- <form id="contact-form" name="contact-form">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="md-form mb-0">
@@ -118,13 +117,13 @@ if($_POST["message"]) {
                 </div>
                 
   
-            </form>
+            </form> -->
   
             <div class="text-center text-md-left">
                 <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
             <div class="status"></div>
-        </div> -->
+        </div>
         
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
