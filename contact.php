@@ -1,6 +1,6 @@
 <?php
 if($_POST["message"]) {
-    mail("your@email.address", "Form to email message", $_POST["message"], "From: an@email.address");
+    mail("rwilliams01101@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
 }
 ?>
 <!doctype html>
@@ -71,12 +71,16 @@ if($_POST["message"]) {
     <div class="row">
         <div class="col-md-9 mb-md-0 mb-5">
         
+        <form method="post" action="contact.php">
+    <textarea name="message"></textarea>
+    <input type="submit">
+</form>
                
                 
 
 
 
-            <form id="contact-form" name="contact-form" method="post" action="contact.php">
+            <!-- <form id="contact-form" name="contact-form" method="post" action="contact.php">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="md-form mb-0">
@@ -120,7 +124,7 @@ if($_POST["message"]) {
                 <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
             <div class="status"></div>
-        </div>
+        </div> -->
         
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
