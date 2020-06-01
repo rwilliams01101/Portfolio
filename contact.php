@@ -1,4 +1,8 @@
-
+<?php
+if($_POST["message"]) {
+    mail("your@email.address", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -66,7 +70,13 @@
   
     <div class="row">
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        
+               
+                
+
+
+
+            <form id="contact-form" name="contact-form" method="post" action="contact.php">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="md-form mb-0">
@@ -97,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea type="submit" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Your Message</label>
                         </div>
                     </div>
