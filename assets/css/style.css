@@ -1,5 +1,10 @@
-.note {
+p.note {
     padding: 10px 20px 10px 20px;
+}
+
+#noteMargin {
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 html, body {
